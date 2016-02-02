@@ -52,5 +52,20 @@ public class AwsS3ServiceApplicationTests {
 			e.printStackTrace();
 		}
 	}
+	
+	@Test
+	public void listFileNamesFromS3(){
+		S3ReadPojo s3ReadPojo = new S3ReadPojo("<your-bucket-name>",
+				"<your-s3-access-key>", 
+				"<your-s3-access-secret>", 
+				"<s3-file-path-to-read>", 
+				"<destination-file-path>");
+		try {
+			// Please uncomment below line to test
+			//awsService.listKeys(s3ReadPojo);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 
 }
